@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="register-form">
+            <div class="form-group">
+                <label class="label" for="username">Nome</label>
+                <input class="input" type="text" id="username" placeholder="Digite seu nome completo" />
+            </div>
+            <div class="form-group">
+                <label class="label" for="userEmail">E-mail</label>
+                <input class="input" type="email" id="userEmail" placeholder="Digite seu E-mail" />
+            </div>
+            <div class="form-group">
+                <label class="label" for="password">Senha</label>
+                <input class="input" type="password" id="password" placeholder="Digite sua senha" />
+                <span id="toggle-password" class="toggle-password">
+                    <i id="toggle-password-icon" class="fas fa-eye-slash"></i>
+                  </span>
+            </div>
+            <div class="form-group">
+                <label class="label" for="passwordVerify">Confirmação</label>
+                <input class="input" type="password" id="passwordVerify" placeholder="Repita sua senha" />
+                <span id="toggle-passwordVerify" class="toggle-password">
+                    <i id="toggle-passwordVerify-icon" class="fas fa-eye-slash"></i>
+                  </span>
+            </div>
+            <button class="button" type="submit">Registra-se</button>
+            <div class="form-group">
+                <p>Já tem uma conta? <a href="/index.html">Logar</a></p>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
