@@ -14,19 +14,31 @@
     <form class="login-form">
       <div class="form-group">
         <label class="label" for="username">Usuário</label>
-        <input class="input" type="email" id="userEmail" placeholder="Digite seu nome de usuário" />
+        <input class="input" type="email" id="userEmail" placeholder="Digite seu nome de usuário" required/>
       </div>
       <div class="form-group">
         <label class="label" for="password">Senha</label>
         <input class="input passwdInput" type="password" id="password" placeholder="Digite sua senha" />
         <span id="toggle-password" class="toggle-password">
-            <i id="toggle-password-icon" class="iconEyes fas fa-eye-slash"></i>
+          
+          <i id="toggle-password-icon" class="iconEyes fas fa-eye-slash"></i>
+          
           </span>
       </div>
       <div class="form-group">
         <div class="remember-checkbox">
             <input class="checkbox" type="checkbox" id="remember"  onclick="remenberMe()"/>
             <label for="remember">Lembrar de mim</label>
+            <p><a id="openModalBtn">Esqueceu a senha?</a></p>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Recuperar login</h2>
+                <input class="inputsModal" type="email"  placeholder=" Digite o email registrado" required/>
+                <button class="buttonModal" type="submit">Enviar email</button>     
+              </div>
+            </div>
+
         </div>
       </div>
       <button class="button" type="submit">Entrar</button>
@@ -37,5 +49,6 @@
     </form>
   </div>
     <script src="./javascript/index.js"></script>
+    <script src="./javascript/filters.js"></script>
 </body>
 </html>

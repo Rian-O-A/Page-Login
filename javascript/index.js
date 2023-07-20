@@ -1,26 +1,3 @@
-function passwordVisibility(x){
-    
-    let passwordInput = document.querySelectorAll(".passwdInput")
-    let eyesLook = document.querySelectorAll(".iconEyes")
-
-    
-        
-    if(passwordInput[x].type ==='password'){
-        passwordInput[x].type = 'text'
-        eyesLook[x].classList.add('fa-eye')
-        eyesLook[x].classList.remove('fa-eye-slash')
-    
-
-    }else{
-        passwordInput[x].type = 'password'
-        eyesLook[x].classList.add('fa-eye-slash')
-        eyesLook[x].classList.remove('fa-eye')
-    
-    }
-    
-
-}
-
 function remenberMe(){
     let salvarObject = {email: document.querySelector('#userEmail').value, password: document.querySelector('#password').value}
     const dataExpiracao = new Date('9999-12-31').toUTCString()
@@ -67,21 +44,51 @@ document.querySelector("#remember").addEventListener('change', function() {
     }})
 
 
+var modal = document.getElementById("myModal")
+var openModalBtn = document.getElementById("openModalBtn")
+var closeModalBtn = document.getElementsByClassName("close")[0]
+var modalForm = document.querySelector(".inputsModal")
+
+openModalBtn.addEventListener("click", function() {
+        
+    modal.style.display = "block"
+});
+
+closeModalBtn
+    
+
+    console.log(closeModalBtn)
+    closeModalBtn.addEventListener("click", function() {
+        modal.style.display = "none"
+    })
 
 
-var togglePassword = document.getElementById('toggle-password')
-var togglePasswordVerify = document.getElementById('toggle-passwordVerify')
-togglePassword.addEventListener('click', function () {
-    passwordVisibility(0)})
-if(togglePasswordVerify){
-
-    togglePasswordVerify.addEventListener('click',  function () {
-        passwordVisibility(1)})
-}
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none"
+    }
+});
 
 
-var video = document.getElementById('video-background')
-if (video){
-    video.style.display = ''
-}
+
+modalForm.addEventListener("submit", function(event) {
+    event.preventDefault() // Impede o envio do formulário (recarregar a página)
+
+    // Lógica de validação e processamento do formulário aqui
+    // Acesse os campos usando modalForm.campo1.value, modalForm.campo2.value, etc.
+
+    // Exemplo de validação simples
+    if (modalForm.value === "") {
+        console.log('teste')
+        alert("Preencha todos os campos!")
+        } else {
+        console.log('teste5')
+        alert("Formulário enviado com sucesso!")
+        modal.style.display = "none"
+        }
+    })
+
+    
+
+
 
