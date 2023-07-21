@@ -48,47 +48,49 @@ var modal = document.getElementById("myModal")
 var openModalBtn = document.getElementById("openModalBtn")
 var closeModalBtn = document.getElementsByClassName("close")[0]
 var modalForm = document.querySelector(".inputsModal")
+var modalButton = document.querySelector(".buttonModal")
 
 openModalBtn.addEventListener("click", function() {
         
     modal.style.display = "block"
-});
+    if (document.querySelector("#userEmail").value === ""){
 
-closeModalBtn
-    
-
-    console.log(closeModalBtn)
-    closeModalBtn.addEventListener("click", function() {
-        modal.style.display = "none"
-    })
-
-
-window.addEventListener("click", function(event) {
-    if (event.target == modal) {
-    modal.style.display = "none"
+        document.querySelector("#userEmail").value = 'example@example.com'
     }
 });
 
 
+    
 
-modalForm.addEventListener("submit", function(event) {
+
+closeModalBtn.addEventListener("click", function() {
+    if(document.querySelector("#userEmail").value === 'example@example.com'){
+        document.querySelector("#userEmail").value = ""
+    }
+    modal.style.display = "none"
+})
+
+
+
+modalButton.addEventListener("click", function(event) {
     event.preventDefault() // Impede o envio do formulário (recarregar a página)
-
+    
     // Lógica de validação e processamento do formulário aqui
     // Acesse os campos usando modalForm.campo1.value, modalForm.campo2.value, etc.
 
     // Exemplo de validação simples
     if (modalForm.value === "") {
-        console.log('teste')
-        alert("Preencha todos os campos!")
+        
+        alert("Preencha o campo do email!")
         } else {
-        console.log('teste5')
-        alert("Formulário enviado com sucesso!")
-        modal.style.display = "none"
+            if (modalForm.value.includes('@')){
+                alert("Email de recuperação enviado com sucesso!")
+                if(document.querySelector("#userEmail").value === 'example@example.com'){
+                    document.querySelector("#userEmail").value = ""
+                }
+                modal.style.display = "none"}
+            else{
+                alert(`Inclua o @ no seu email (${modalForm.value})`)
+        }
         }
     })
-
-    
-
-
-

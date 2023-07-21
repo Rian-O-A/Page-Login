@@ -21,7 +21,9 @@ function passwordVisibility(x){
 
 }
 
-function verifyInput(){}
+
+
+
 
 
 var togglePassword = document.getElementById('toggle-password')

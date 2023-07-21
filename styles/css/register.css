@@ -51,6 +51,7 @@ body {
     transition: border-color 0.3s ease-in-out;
   }
   
+  .input:hover,
   .input:focus {
     outline: none;
     border-color: rgb(131, 5, 148);
@@ -99,3 +100,10 @@ body {
   .form-group p a:hover {
     text-decoration: underline;
   }
+
+  /* error message */
+
+.error-message{
+  display: none;
+  color: red;
+}
