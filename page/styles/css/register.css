@@ -17,7 +17,13 @@ body {
     object-fit: cover;
     z-index: -1;
   }
-
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+  }
   .container {
     display: flex;
     justify-content: center;
@@ -91,6 +97,8 @@ body {
   
   .button:hover {
     background-color: rgb(89, 4, 100);
+    
+    
   }
   
   .button:active {
