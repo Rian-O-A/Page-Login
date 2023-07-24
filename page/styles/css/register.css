@@ -122,6 +122,15 @@ body {
   /* error message */
 
 .error-message{
-  display: none;
   color: red;
+  font-size: 12px;
+  padding-left: 13px;
+}
+
+#error-password{
+  display: none;
+}
+
+#error-passwordVerify{
+  display: none;
 }
