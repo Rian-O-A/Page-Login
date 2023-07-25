@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url(/page/styles/img/backgroundIMG.png);
+  background-image: url(./img/backgroundIMG.png);
   background-size: cover;
   background-position: center;
 }

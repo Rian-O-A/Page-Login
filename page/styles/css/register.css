@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url(/page/styles/img/backGroundRegister.png);
+  background-image: url(./img/backGroundRegister.png);
   background-size: cover;
   background-position: center;
   }
