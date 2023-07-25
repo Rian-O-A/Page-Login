@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333333; 
-    overflow: hidden;
-    background-image: url("/page/styles/img/backGroundRegister.png");
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0; 
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(/page/styles/img/backGroundRegister.png);
+  background-size: cover;
+  background-position: center;
   }
 
   #video-background {
