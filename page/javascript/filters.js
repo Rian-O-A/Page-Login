@@ -23,9 +23,6 @@ function passwordVisibility(x){
 
 
 
-
-
-
 var togglePassword = document.getElementById('toggle-password')
 var togglePasswordVerify = document.getElementById('toggle-passwordVerify')
 togglePassword.addEventListener('click', function () {
