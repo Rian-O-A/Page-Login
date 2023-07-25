@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url(/page/styles/img/backgroundIMG.jpg);
+  background-image: url(/page/styles/img/backgroundIMG.png);
   background-size: cover;
   background-position: center;
 }
@@ -43,7 +43,8 @@ body {
   border-radius: 10px;
   padding: 40px;
   width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-color: #000000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.589);
 }
 
 .form-group {

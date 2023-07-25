@@ -34,12 +34,6 @@ if(togglePasswordVerify){
 }
 
 
-var video = document.getElementById('video-background')
-if (video){
-    video.style.display = ''
-}
-
-
 let password = document.querySelectorAll(".passwdInput")
 let verifyError 
 
@@ -98,3 +92,8 @@ if (form){
     
     })
 }
+
+
+var video = document.getElementById('video-background')
+
+video.style.display = ''
