@@ -86,7 +86,7 @@ if (form){
             event.preventDefault()
             let nome = document.querySelector(".input").value
             window.alert(`User "${nome}" registrado com sucesso!`)
-            window.location.href = '/page/index.html'
+            window.location.href = './index.html'
         }
     
     
