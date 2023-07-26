@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Formulário de login */
@@ -42,9 +42,11 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 40px;
-  width: 400px;
+  max-width: 400px;
   border-color: #000000;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.589);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -65,7 +67,6 @@ body {
 .input {
   width: 90%;
   height: 40px;
-  margin-left: 10px;
   border: none;
   border-bottom: 1px solid #000000;
   border-radius: 4px;
@@ -193,7 +194,6 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  
   text-align: center;
 }
 
@@ -202,8 +202,9 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 40px;
-  width: 400px;
+  max-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
 .inputsModal {
@@ -212,7 +213,7 @@ body {
 }
 
 .modal-content input {
-  width: 95%;
+  width: 100%;
   height: 40px;
   padding: 8px;
   border: 1px solid #000000;
@@ -240,7 +241,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin-top: 10PX;
+  margin-top: 10px;
 }
 
 .close {
@@ -256,33 +257,4 @@ body {
   color: rgb(131, 5, 148);
   text-decoration: none;
   cursor: pointer;
-}
-/* Adicionar Media Query para dispositivos móveis com tamanho de tela 375x667 (iPhone 6) */
-@media (max-width: 375px) and (max-height: 667px) {
-  body {
-    font-size: 16px; /* Ajustar o tamanho da fonte para dispositivos móveis */
-  }
-
-  .login-form {
-    padding: 20px; /* Aumentar o padding para melhor espaçamento */
-    width: 90%; /* Reduzir a largura para aproveitar mais espaço */
-    max-width: 400px; /* Limitar a largura máxima */
-    margin: 0 auto; /* Centralizar o formulário */
-  }
-
-  .label {
-    font-size: 16px; /* Reduzir o tamanho da fonte para rótulos */
-  }
-
-  .input {
-    width: 100%; /* Ajustar a largura para ocupar toda a largura disponível */
-    height: 45px; /* Aumentar a altura dos campos */
-    margin-bottom: 15px; /* Aumentar o espaçamento inferior entre campos */
-    padding: 10px; /* Aumentar o padding para maior área de clique */
-    font-size: 16px; /* Ajustar o tamanho da fonte para campos de entrada */
-  }
-
-  .button {
-    font-size: 18px; /* Ajustar o tamanho da fonte para botão de login */
-  }
 }
